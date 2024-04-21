@@ -3,7 +3,6 @@ source("init.R")
 mdl <- ult$YOLO("./models/best.onnx", task = "segment")
 
 server <- function(input, output, session) {
-  
   access_data <- reactiveValues(path = NULL)
   options(shiny.maxRequestSize=30*1024^2)
   
@@ -175,7 +174,6 @@ server <- function(input, output, session) {
       # Move detection image to root of result
       for (d in list.dirs(paste0(getwd(), "/results"), full.names = T, recursive = F)) {
         for (f in list.files(d, full.names = T)) {
-        print(f)
           file.copy(from = f, to = paste0(getwd(), "/results/", basename(f)), 
                     overwrite = T, copy.date = T)
           unlink(d, recursive = T)
@@ -215,11 +213,7 @@ server <- function(input, output, session) {
        }
      })
       
-      
-      
     })
-    
-    # Process to segmentation
-    
+    onStop(fun = function() {rm(list = ls())}, session = session)
 }
 

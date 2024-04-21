@@ -6,4 +6,3 @@ shiny::runApp(
   port = as.numeric(Sys.getenv("PORT"))
 )
 
-rm(piexif, r_packages, py_packages, ult, piexif)

@@ -9,28 +9,10 @@
     src: url('fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
-/*** HEADER ***/
-.skin-blue .main-header .navbar {
-    background-color: #042d0f;
-}
-
-.skin-blue .main-header .logo {
-    background-color: #042d0f;
-}
-
-.skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
-    background-color: #042d0f;
-}
-
-
 .fit_model_btn_icon {
   color: green;
 }
 
-/* When hovering toggle button */
-.skin-blue .main-header .navbar .sidebar-toggle:hover {
-    background-color: #042d0f;
-}
 /****TITLES FONT ****/
 h1 {
     font-family: 'Montserrat-Bold',sans-serif;
@@ -75,7 +57,43 @@ body {
 
 #point_vulture{
   font-family: 'Montserrat-Bold',sans-serif;
-  background-color: #6C5B7B;
-  font-size: 2rem;
+  background-color: #6C5B7B80;
+  font-size: 3rem;
+  border: 0px solid white;
   color: white;
+}
+#point_vulture:hover{
+  background-color: #6C5B7B;
+}
+
+/*Upload image progress*/
+.progress-bar {
+  color: #fff;
+  background-color: #6C5B7B;
+}
+
+/*Process button*/
+#process_seg{
+  font-family: 'Montserrat-Bold',sans-serif;
+  background-color: #6C5B7B;
+  font-size: 1.5rem;
+  border: 0px solid white;
+  color: white;
+}
+
+#process_seg:hover{
+  background-color: #6C5B7B99;
+}
+
+/*Save*/
+#download_detect_df{
+  font-family: 'Montserrat-Bold',sans-serif;
+  background-color: #6C5B7B;
+  font-size: 1.5rem;
+  border: 0px solid white;
+  color: white;
+}
+
+#download_detect_df:hover{
+  background-color: #6C5B7B99;
 }

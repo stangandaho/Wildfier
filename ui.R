@@ -8,7 +8,7 @@ ui <- fluidPage(
   
   div(
     actionButton(inputId = "point_vulture", label = "Point vultures", 
-                 style = "position:absolute; margin-top:25%; margin-left:50%"),
+                 style = "position:absolute; margin-top:25%; margin-left:45%"),
     style = "background-color:red; position: relative;"
   )
   
