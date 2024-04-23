@@ -10,7 +10,7 @@ git clone https://github.com/stangandaho/wildfier.git
 Or [download](https://github.com/stangandaho/wildfier/archive/refs/heads/main.zip) and unzip the repository. Go to _wildfier_ folder and click on _wildfier.Rproj_. Make sure you have [R and RStudio](https://posit.co/download/rstudio-desktop/) installed. To run the app, open _ui.R_ or _server.R_ file and click on __Run App__ button.
 ![run_app](www/images/run_app.jpg)
 
-⚠ If you launch the application for the first time, it can take some second to load the necessaries dependencies. Make sure you are connected to internet, because some python modules are required.
+⚠ If you launch the application for the first time, it can take 5-10min to load the necessaries dependencies. Make sure you are connected to internet, because some python modules are required.
 
 Once loaded, the app main interface look like this:
 ![main_interface](www/images/main_wildfier_interface.jpg). 
